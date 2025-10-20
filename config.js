@@ -10,7 +10,7 @@ module.exports = {
 	inviteScopes: ["bot", "applications.commands"], // Invite link scopes
 	serverDeafen: true, //- If you want bot to stay deafened
 	defaultVolume: 100, //- Sets the default volume of the bot, You can change this number anywhere from 1 to 100
-	supportServer: "https://discord.gg/sbySMS7m3v", //- Support Server Link
+	supportServer: "https://discord.gg/4kHNVrQwvS", //- Support Server Link
 	Issues: "https://github.com/SudhanPlayz/Discord-MusicBot/issues", //- Bug Report Link
 	permissions: 277083450689, //- Bot Inviting Permissions
 	disconnectTime: 30000, //- How long should the bot wait before disconnecting from the voice channel (in miliseconds). Set to 1 for instant disconnect.
@@ -37,11 +37,11 @@ module.exports = {
 	embedColor: "#2f3136", //- Color of the embeds, hex supported
 	presence: {
 		// PresenceData object | https://discord.js.org/#/docs/main/stable/typedef/PresenceData
-		status: "online", //- You can have online, idle, dnd and invisible (Note: invisible makes people think the bot is offline)
+		status: "dnd", //- You can have online, idle, dnd and invisible (Note: invisible makes people think the bot is offline)
 		activities: [
 			{
-				name: "Music", //- Status Text
-				type: "LISTENING", //- PLAYING, WATCHING, LISTENING, STREAMING
+				name: "Your Mom", //- Status Text
+				type: "STREAMING", //- PLAYING, WATCHING, LISTENING, STREAMING
 			},
 		],
 	},
