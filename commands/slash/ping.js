@@ -8,7 +8,7 @@ const command = new SlashCommand()
     let msg = await interaction.channel.send({
       embeds: [
         new MessageEmbed()
-          .setDescription("🏓 | Fetching ping...")
+          .setDescription("<:redcheck:820455379858489414> | **Fetching ping**...")
           .setColor("#6F8FAF"),
       ],
     });
@@ -44,15 +44,15 @@ const command = new SlashCommand()
     interaction.reply({
       embeds: [
         new MessageEmbed()
-          .setTitle("🏓 | Pong!")
+          .setTitle("<:redcheck:820455379858489414>  | Pong!")
           .addFields(
             {
-              name: "API Latency",
+              name: "- **API Latency**",
               value: `\`\`\`yml\n${apiState} | ${apiPing}ms\`\`\``,
               inline: true,
             },
             {
-              name: "Bot Latency",
+              name: "- **Bot Latency**",
               value: `\`\`\`yml\n${botState} | ${botPing}ms\`\`\``,
               inline: true,
             }
