@@ -2,7 +2,7 @@ const SlashCommand = require("../../lib/SlashCommand");
 const { MessageEmbed } = require("discord.js");
 
 const command = new SlashCommand()
-	.setName("summon")
+	.setName("join")
 	.setDescription("Summons the bot to the channel.")
 	.setRun(async (client, interaction, options) => {
 		let channel = await client.getChannel(client, interaction);
@@ -10,7 +10,7 @@ const command = new SlashCommand()
 			const joinEmbed = new MessageEmbed()
 				.setColor(client.config.embedColor)
 				.setDescription(
-					"❌ | **You must be in a voice channel to use this command.**",
+					"<:redcheck:820455379858489414> | **You must be in a voice channel to use this command.**",
 				);
 			return interaction.reply({ embeds: [joinEmbed], ephemeral: true });
 		}
@@ -28,7 +28,7 @@ const command = new SlashCommand()
 		
 		interaction.reply({
 			embeds: [
-				client.Embed(`:thumbsup: | **Successfully joined <#${ channel.id }>!**`),
+				client.Embed(`<:redcheck:820455379858489414> | **Successfully joined <#${ channel.id }>!**`),
 			],
 		});
 	});
